@@ -2,14 +2,18 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 class Contact extends Component {
+  state = {};
+  onshowClick = (e) => {};
   render() {
-    const { contact } = this.props;
+    const { name, email, phone } = this.props.contact;
     return (
       <div className="card card-body mb-3">
-        <h4>{contact.name}</h4>
+        <h4>
+          {name} <i onClick={this.onshowClick} className="fas fa-sort-down" />
+        </h4>
         <ul className="list-group">
-          <li className="list-group-item">Email: {contact.email}</li>
-          <li className="list-group-item">Phone : {contact.phone}</li>
+          <li className="list-group-item">Email: {email}</li>
+          <li className="list-group-item">Phone : {phone}</li>
         </ul>
       </div>
     );
