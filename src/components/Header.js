@@ -1,6 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types'
-
+import PropTypes from "prop-types";
 
 const Header = (props) => {
   const { branding } = props;
@@ -12,10 +11,11 @@ const Header = (props) => {
 };
 
 Header.defaultProps = {
-  branding: 'Contact Manager'
+  branding: "Contact Manager",
 };
 
 Header.PropTypes = {
-  branding : PropTypes.string.isRequired
-}
+  branding: PropTypes.string.isRequired,
+};
+
 export default Header;
