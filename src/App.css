@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+  .contact_list {
+    max-width: 50%;
+  }
+}
+.navbar-brand {
+  font-size: 24px;
+  color: white !important;
+}
+.nav-item {
+  color: white !important;
+}
+
+.card {
+  background-color: rgb(255, 227, 227);
+}
