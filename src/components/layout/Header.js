@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = (props) => {
   const { branding } = props;
   return (
-    <nav className="navbar navbar-expand-sm navbar-light bg-danger mb-3 py-0">
+    <nav className="navbar navbar-expand-sm navbar-dark bg-danger mb-3 py-0">
       <div className="container">
         <a href="/" className="navbar-brand">
           {branding}
@@ -13,17 +13,17 @@ const Header = (props) => {
         <div>
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link text-white" to="/">
                 <i className="fas fa-home"></i> Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact/add">
+              <Link className="nav-link text-white" to="/contact/add">
                 <i className="fas fa-user-plus"></i> Add
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link text-white" to="/about">
                 <i className="fas fa-info-circle"></i> About
               </Link>
             </li>

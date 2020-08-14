@@ -38,6 +38,18 @@ class EditContact extends Component {
       this.setState({ errors: { phone: "Phone is required" } });
       return;
     }
+    const updateContact = {
+      name,
+      email,
+      phone,
+    };
+
+    const { id } = this.props.match.params;
+    const res = await axios.put(
+      `https://jsonplaceholder.typicode.com/users/${id}`,
+      updateContact
+    );
+    dispatch({ type: "UPDATE_CONTACT", payload: res.data });
 
     //Clear the state
 
