@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@600&display=swap");
 @media (min-width: 768px) {
   .contact_list {
     max-width: 50%;
@@ -5,15 +6,24 @@
 }
 .navbar-brand {
   font-size: 24px;
-  color: white !important;
-}
-.nav-item {
-  color: white !important;
+  color: whitesmoke !important;
 }
 
 .card_list {
-  background-color: rgb(255, 227, 227);
+  background-color: #162447;
+  color: whitesmoke;
+  font-family: "Alata", sans-serif;
 }
 .nav-link {
   font-size: 12px !important;
+}
+.App {
+  background-color: #1b1b2f;
+}
+.navbar {
+  background-color: #1f4068;
+}
+.list-group-item {
+  color: black;
+  font-family: "Montserrat", sans-serif;
 }
