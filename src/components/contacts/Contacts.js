@@ -16,7 +16,7 @@ class Contacts extends Component {
                 </h1>
                 <div style={{ paddingBottom: "5%" }}>
                   <span className="text-white">
-                    Contacts Data are fetched from API :&nbsp;
+                    Contacts Data are being fetched from API :&nbsp;
                   </span>
                   <a
                     className="text-warning"
