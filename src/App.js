@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Contacts from "./components/contacts/Contacts";
 import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 import About from "./components/pages/About";
 import NotFound from "./components/pages/NotFound";
 import AddContact from "./components/contacts/AddContact";
@@ -26,6 +27,7 @@ class App extends Component {
                 <Route component={NotFound} />
               </Switch>
             </div>
+            <Footer />
           </div>
         </Router>
       </Provider>

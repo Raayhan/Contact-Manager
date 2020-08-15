@@ -14,6 +14,18 @@ class Contacts extends Component {
                   <span className="text-danger">Contact</span>
                   <span className="text-white"> List</span>
                 </h1>
+                <div style={{ paddingBottom: "5%" }}>
+                  <span className="text-white">
+                    Contacts Data are fetched from API :&nbsp;
+                  </span>
+                  <a
+                    className="text-warning"
+                    href="https://jsonplaceholder.typicode.com"
+                    target="_blank"
+                  >
+                    https://jsonplaceholder.typicode.com
+                  </a>
+                </div>
                 {contacts.map((contact) => (
                   <Contact key={contact.id} contact={contact} />
                 ))}
