@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Consumer } from "../../context";
 import TextInputGroup from "../layout/TextInputGroup";
 import axios from "axios";
+import { MDBAnimation } from "mdbreact";
 
 class EditContact extends Component {
   state = {
@@ -69,45 +70,50 @@ class EditContact extends Component {
       <Consumer>
         {(value) => {
           const { dispatch } = value;
-          return (
-            <div className="card mb-3">
-              <div className="card-header">Edit Contact</div>
-              <div className="card-body">
-                <form onSubmit={this.onSubmit.bind(this, dispatch)}>
-                  <TextInputGroup
-                    label="Name"
-                    name="name"
-                    placeholder="Enter Name"
-                    value={name}
-                    onChange={this.onChange}
-                    error={errors.name}
-                  />
-                  <TextInputGroup
-                    label="Email"
-                    name="email"
-                    type="email"
-                    placeholder="Enter Email"
-                    value={email}
-                    onChange={this.onChange}
-                    error={errors.email}
-                  />
-                  <TextInputGroup
-                    label="Phone"
-                    name="phone"
-                    placeholder="Enter Phone"
-                    value={phone}
-                    onChange={this.onChange}
-                    error={errors.phone}
-                  />
 
-                  <input
-                    type="submit"
-                    value="Update Contact"
-                    className="btn btn-danger btn-block"
-                  />
-                </form>
+          return (
+            <MDBAnimation type="zoomIn" duration="500ms">
+              <div style={{ height: "100vh", paddingTop: "10%" }}>
+                <div className="card mb-3">
+                  <div className="card-header">Edit Contact</div>
+                  <div className="card-body">
+                    <form onSubmit={this.onSubmit.bind(this, dispatch)}>
+                      <TextInputGroup
+                        label="Name"
+                        name="name"
+                        placeholder="Enter Name"
+                        value={name}
+                        onChange={this.onChange}
+                        error={errors.name}
+                      />
+                      <TextInputGroup
+                        label="Email"
+                        name="email"
+                        type="email"
+                        placeholder="Enter Email"
+                        value={email}
+                        onChange={this.onChange}
+                        error={errors.email}
+                      />
+                      <TextInputGroup
+                        label="Phone"
+                        name="phone"
+                        placeholder="Enter Phone"
+                        value={phone}
+                        onChange={this.onChange}
+                        error={errors.phone}
+                      />
+
+                      <input
+                        type="submit"
+                        value="Update Contact"
+                        className="btn btn-danger btn-block"
+                      />
+                    </form>
+                  </div>
+                </div>
               </div>
-            </div>
+            </MDBAnimation>
           );
         }}
       </Consumer>

@@ -1,3 +1,4 @@
+import "mdbreact/dist/css/mdb.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
