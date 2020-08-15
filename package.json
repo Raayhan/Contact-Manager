@@ -2,7 +2,7 @@
   "name": "contactmanager",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://raayhan.github.io/contact-manager",
+  "homepage": "https://raayhan.github.io/Contact-Manager",
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
