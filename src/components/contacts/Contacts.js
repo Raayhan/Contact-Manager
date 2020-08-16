@@ -10,10 +10,10 @@ class Contacts extends Component {
           return (
             <React.Fragment>
               <div style={{ paddingBottom: "10%" }}>
-                <h1 className="display-4 mb-2">
+                <h2 className="display-4 mb-2">
                   <span className="text-danger">Contact</span>
                   <span className="text-white"> List</span>
-                </h1>
+                </h2>
                 <div style={{ paddingBottom: "5%" }}>
                   <span className="text-white">
                     Contacts Data are being fetched from API :&nbsp;
